@@ -1,0 +1,63 @@
+/* CUSTOM PROPORTIES */
+:root {
+  --green-color: #6a983c;
+  --text-color: #151515;
+  --second-font-family: "Open Sans", "Arial", sans-serif;
+  --font-family: "Poppins", "Arial", sans-serif;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v20-latin-regular.woff2') format('woff2'), 
+  url('../fonts/open-sans-v20-latin-regular.woff') format('woff'); 
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/poppins-v15-latin-500.woff2') format('woff2'), 
+  url('../fonts/poppins-v15-latin-500.woff') format('woff'); 
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-v15-latin-600.woff2') format('woff2'), 
+  url('../fonts/poppins-v15-latin-600.woff') format('woff'); 
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/poppins-v15-latin-700.woff2') format('woff2'), 
+  url('../fonts/poppins-v15-latin-700.woff') format('woff'); 
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  list-style: none;
+  overflow-x: hidden;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
+.container{
+  max-width: 11t0px;
+  margin: 0 auto;
+}
