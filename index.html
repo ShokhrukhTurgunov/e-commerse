@@ -39,13 +39,63 @@
       </nav>
       
       <section class="header-section">
-        
+        <img class="header-section__img" src="/images/site-header-logo.svg" alt="site logo image" width="177" height="50">
+        <form class="header-section__form" action="#">
+          <label class="visually-hidden" for="cars">Select label</label>
+          
+          <select class="header-section__select" id="cars">
+            <option class="header-section__option" value="volvo">All categories</option>
+            <option class="header-section__option" value="opel">Meat and fish</option>
+            <option class="header-section__option" value="audi">Drinks</option>
+          </select>
+
+          <label class="visually-hidden" for="input">Input label</label>
+          <input class="header-section__input" id="input" name="input" type="search" placeholder="Search Products, categories ...">
+        </form>
+
+
+        <div class="site-user">
+          <a class="site-user__link" href="#">
+            <img class="site-user__img" src="/images/user-account.svg" alt="user image" width="24" height="24">
+          </a>
+          <a class="site-user__basket-link" href="#">
+            <img class="site-user__basket-img" src="/images/pocket.svg" alt="basket image" width="24" height="24">
+          </a>
+        </div>
       </section>
-      
+    </div>  
+
+
       <div class="site-menu">
-        
+        <div class="container">
+          <ul class="site-menu__list">
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="#">Bakery</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="#">Fruit and vegetables</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="#">Meat and fish</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="#">Drinks</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="#">Kitchen</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="#">Special nutrition</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="#">Baby</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="#">Pharmacy</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
   </header>
 </body>
 </html>
