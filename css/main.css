@@ -157,6 +157,7 @@ body{
 
 .site-user__basket-img{
   position: relative;
+  display: inline-block;
 }
 
 .site-user__basket-img::before{
@@ -233,6 +234,18 @@ body{
 .site-menu__item:hover .dropdown-menu{
   display: block;
 }
+
+/* MAIN */
+/* CATEGORY SECTION */
+.category-section{
+  padding: 64px 0;
+}
+
+
+
+
+
+
 
 
 /* max-width: 1240px */
