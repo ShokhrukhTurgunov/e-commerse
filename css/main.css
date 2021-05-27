@@ -477,6 +477,7 @@ body{
   background-color: var(--green-color);
   text-decoration: none;
   color: #fff;
+  white-space: nowrap;
 }
 
 
@@ -717,7 +718,7 @@ body{
     font-size: 12px;
     line-height: 16px;
     text-decoration: none;
-    color: var(--text-color);
+    color: #fff;
   }
 
   .category-menu-section{
@@ -727,5 +728,6 @@ body{
 
   .recepies-section{
     margin-left: 0px;
+    margin-bottom: 20px;
   }
 }
