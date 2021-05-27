@@ -237,7 +237,8 @@ body{
 
 /* MAIN */
 /* CATEGORY SECTION */
-.category-section{
+.category-section,
+.products-section{
   padding: 64px 0;
 }
 
@@ -246,7 +247,8 @@ body{
   align-items: center;
 }
 
-.category-menu__title{
+.category-menu__title,
+.products-menu__title{
   margin: 0;
   margin-bottom: 16px;
   font-weight: 600;
@@ -255,24 +257,28 @@ body{
   color: var(--text-color);
 }
 
-.category-menu__item:not(:last-child){
+.category-menu__item:not(:last-child),
+.products-menu__item:not(:last-child){
   margin-bottom: 12px;
 }
 
-.category-menu__link{
+.category-menu__link,
+.products-menu__link{
   font-size: 14px;
   line-height: 19px;
   color: var(--green-color);
 }
 
-.category-menu__list{
+.category-menu__list,
+.products-menu__list{
   list-style: none;
   margin: 0;
   padding: 0;
   margin-bottom: 48px;
 }
 
-.category-section__link{
+.category-section__link,
+.products-section__link{
   padding: 13px 16px;
   padding-right: 48px;
   background: #F5F5F5;
@@ -291,6 +297,7 @@ body{
   padding-left: 32px;
   padding-right: 181px;
   background-image: url("/images/vegs-banner.png");
+  background-repeat: no-repeat;
   background-size: 419px 280px;
   border-radius: 25px;
 }
@@ -341,9 +348,111 @@ body{
 }
 
 
+/* PRODUCTS SECTION  */
+.products-section__container{
+  display: flex;
+  align-items: center;
+}
+
+.products-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.one-fifty-dollar__product,
+.thirty-dollar__product,
+.one-ten-dollar__product{
+  padding: 16px;
+  padding-bottom: 26px;
+  border: 1px solid #D1D1D1;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+.thirty-dollar__product{
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.products-image-box{
+  margin-bottom: 16px;
+  padding: 90px;
+  padding-right: 120px;
+  padding-left: 120px;
+  border-radius: 12px;
+  background-color: #F9F9F9;
+  background-size: 237px 150px;
+}
+
+.sale-products{
+  position: relative;
+}
+
+.sale-products::before{
+  content: "-36 %";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--green-color);
+}
 
 
+.one-fifty-dollar__product-title{
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--text-color);
+}
 
+.one-fifty-dollar__product-text{
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #575757;
+}
+
+.one-fifty-dollar__product-price{
+  position: relative;
+  display: inline;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--text-color);
+}
+
+.sale-product-price{
+  position: relative;
+}
+
+.sale-product-price::after{
+  content: "48.56";
+  position: absolute;
+  top: 22px;
+  left: 0;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration-line: line-through;
+  color: #A9A9A9;
+}
+
+.one-fifty-dollar__product-link{
+  margin-left: 70px;
+  padding: 7px 12px;
+  border: 2px solid #46760A;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background-color: var(--green-color);
+  text-decoration: none;
+  color: #fff;
+}
 
 
 /* max-width: 1240px */
