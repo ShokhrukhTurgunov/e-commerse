@@ -219,9 +219,6 @@ body{
   color: var(--text-color);
 }
 
-.site-menu__link:hover{
-  text-decoration: underline;
-}
 
 .dropdown-menu{
   display: none;
@@ -521,12 +518,45 @@ body{
   }
   
   .recepies-section{
-    margin-left: 50px;
+    margin-left: 0;
+    margin: 0 auto;
     padding-right: 100px;
   }
-  
-  .recepies-section:last-child{
+
+
+  .products-section__container{
+    flex-direction: column;
+  }
+
+  .products-menu-section{
+    margin-bottom: 40px;
+  }
+
+  .products-menu__link,
+  .farmers-products-menu__link{
+    display: block;
+    text-align: center;
+  }
+
+  .products-box{
+    margin-left: 0;
+  }
+}
+
+
+/* max-width: 890px */
+@media only screen and (max-width: 890px) {
+  .products-section__container{
+    max-width: 850px;
     margin: 0 auto;
+  }
+
+  .products-image-box{
+    padding-right: 80px;
+  }
+
+  .one-fifty-dollar__product-link{
+    margin-left: 20px;
   }
 }
 
@@ -560,6 +590,10 @@ body{
     display: none;
   }
   
+  .site-menu__link:hover{
+    text-decoration: underline;
+  }
+
   .category-menu-section{
     margin-left: 300px;
     margin-right: 300px;
@@ -568,6 +602,16 @@ body{
   
   .recepies-section{
     padding-right: 70px;
+  }
+
+
+  .products-image-box{
+    padding-right: 60px;
+  }
+
+  .one-fifty-dollar__product-link{
+    margin-left: 8px;
+    padding: 5px 8px;
   }
 }
 
@@ -610,6 +654,25 @@ body{
   .recepies-section{
     margin-left: 20px;
     padding-right: 40px;
+  }
+
+
+  .products-image-box{
+    padding-right: 30px;
+  }
+
+  .one-fifty-dollar__product-price{
+    font-size: 14px;
+  }
+
+  .sale-product-price::after{
+    font-size: 8px;
+  }
+
+  .one-fifty-dollar__product-link{
+    margin-left: 16px;
+    padding: 5px 4px;
+    font-size: 12px;
   }
 }
 
@@ -669,7 +732,32 @@ body{
   }
 
   .recepies-section{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
     padding-right: 12px;
+  }
+
+
+  .thirty-dollar__product{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .products-image-box{
+    padding-right: 20px;
+  }
+
+  .one-fifty-dollar__product-title{
+    font-size: 12px;
+  }
+
+  .one-fifty-dollar__product-text{
+    font-size: 10px;
+  }
+
+  .one-fifty-dollar__product-link{
+    margin-left: 10px;
   }
 }
 
@@ -694,7 +782,38 @@ body{
   }
 
   .recepies-section{
-    margin-left: 0px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+
+  .products-box{
+    flex-direction: column;
+  }
+
+  .thirty-dollar__product{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .products-image-box{
+    padding-right: 40px;
+  }
+
+  .one-fifty-dollar__product-title{
+    font-size: 16px;
+  }
+
+  .one-fifty-dollar__product-text{
+    font-size: 12px;
+  }
+
+  .one-fifty-dollar__product-link{
+    margin-left: 80px;
+    padding: 8px 16px;
   }
 }
 
