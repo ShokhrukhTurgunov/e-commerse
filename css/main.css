@@ -383,6 +383,15 @@ body{
   margin-left: auto;
 }
 
+.product-box{
+  flex-wrap: wrap;
+}
+
+.inside-products-box{
+  margin: 0;
+  margin-bottom: 20px;
+}
+
 .one-fifty-dollar__product,
 .thirty-dollar__product,
 .one-ten-dollar__product{
@@ -456,7 +465,7 @@ body{
 .sale-product-price::after{
   content: "48.56";
   position: absolute;
-  top: 24px;
+  top: 20px;
   left: 0;
   font-weight: 600;
   font-size: 12px;
@@ -488,6 +497,7 @@ body{
 .site-section__container{
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -524,6 +534,7 @@ body{
 
 
 /* HEADLINE SECTION */
+
 .site-section__top{
   display: flex;
   align-items: center;
@@ -785,6 +796,10 @@ body{
   .category-section__container{
     flex-wrap: wrap;
   }
+
+ .inside-products-box{
+   padding: 8px;
+ }
 }
 
 /* max-width: 1060px */
@@ -832,6 +847,14 @@ body{
   .products-box{
     margin-left: 0;
   }
+
+  .products-image-box{
+    padding-right: 100px;
+  }
+
+  .products-box__link{
+    margin-left: 40px;
+  }
 }
 
 
@@ -842,6 +865,14 @@ body{
     margin: 0 auto;
   }
   
+  .inside-products-box:last-child{
+    margin: 0 auto;
+  }
+
+  .thirty-dollar__product{
+    margin: 0;
+  }
+
   .products-image-box{
     padding-right: 80px;
   }
@@ -849,6 +880,7 @@ body{
   .one-fifty-dollar__product-link{
     margin-left: 20px;
   }
+
 }
 
 /* max-width: 768px */
@@ -903,6 +935,14 @@ body{
   .one-fifty-dollar__product-link{
     margin-left: 8px;
     padding: 5px 8px;
+  }
+
+  .product-box{
+    justify-content: space-around;
+  }
+
+  .inside-products-box:last-child{
+    margin: 0;
   }
 }
 
