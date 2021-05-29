@@ -796,11 +796,24 @@ body{
   .category-section__container{
     flex-wrap: wrap;
   }
-
- .inside-products-box{
-   padding: 8px;
- }
+  
+  .inside-products-box{
+    padding: 16px;
+  }
 }
+
+
+/* max-width: 1150px */
+@media only screen and (max-width: 1150px) {
+  .blog-posts {
+    justify-content: space-around;
+  }
+  
+  .tasty-dinner-box{
+    margin-bottom: 50px;
+  }
+}
+
 
 /* max-width: 1060px */
 @media only screen and (max-width: 1060px) {
@@ -847,11 +860,15 @@ body{
   .products-box{
     margin-left: 0;
   }
-
+  
+  .inside-products-box:last-child {
+    margin: 0 auto;
+  }
+  
   .products-image-box{
     padding-right: 100px;
   }
-
+  
   .products-box__link{
     margin-left: 40px;
   }
@@ -868,11 +885,11 @@ body{
   .inside-products-box:last-child{
     margin: 0 auto;
   }
-
+  
   .thirty-dollar__product{
     margin: 0;
   }
-
+  
   .products-image-box{
     padding-right: 80px;
   }
@@ -880,7 +897,15 @@ body{
   .one-fifty-dollar__product-link{
     margin-left: 20px;
   }
-
+  
+  .product-box{
+    justify-content: space-around;
+  }
+  
+  .inside-products-box:last-child {
+    margin: 0;
+  }
+  
 }
 
 /* max-width: 768px */
@@ -936,11 +961,7 @@ body{
     margin-left: 8px;
     padding: 5px 8px;
   }
-
-  .product-box{
-    justify-content: space-around;
-  }
-
+  
   .inside-products-box:last-child{
     margin: 0;
   }
@@ -1004,6 +1025,11 @@ body{
     margin-left: 16px;
     padding: 5px 4px;
     font-size: 12px;
+  }
+  
+  
+  .vegetables-box{
+    margin-bottom: 50px;
   }
 }
 
@@ -1146,6 +1172,12 @@ body{
     margin-left: 80px;
     padding: 8px 16px;
   }
+  
+  
+  .tasty-dinner-box{
+    background-size: 460px 450px;
+    border-radius: 5%;
+  }
 }
 
 
@@ -1179,5 +1211,20 @@ body{
   .recepies-section{
     margin-left: 0px;
     margin-bottom: 20px;
+  }
+}
+
+
+/* max-width: 350px */
+@media only screen and (max-width: 350px) {
+  .inside-salats-box{
+    padding-right: 80px;
+    background-position: calc(50% + 100px) center;
+  }
+  
+  .inside-salats-box__text{
+    max-width: 190px;
+    font-size: 13px;
+    line-height: 18px;
   }
 }
