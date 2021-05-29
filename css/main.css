@@ -800,6 +800,10 @@ body{
   .inside-products-box{
     padding: 16px;
   }
+  
+  .footer-top__section{
+    justify-content: space-around;
+  }
 }
 
 
@@ -1031,6 +1035,12 @@ body{
   .vegetables-box{
     margin-bottom: 50px;
   }
+  
+  
+  .footer-top__section-box:not(:last-child){
+    margin-right: 10px;
+    margin-bottom: 40px;
+  }
 }
 
 
@@ -1177,6 +1187,16 @@ body{
   .tasty-dinner-box{
     background-size: 460px 450px;
     border-radius: 5%;
+  }
+
+
+  .footer-top__section-title{
+    text-align: center;
+  }
+
+  .footer-top__section-link {
+    display: block;
+    text-align: center;
   }
 }
 
