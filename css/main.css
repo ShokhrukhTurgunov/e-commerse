@@ -536,10 +536,11 @@ body{
 
 
 .slide-list{
+  max-width: 1366px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
   padding: 0;
   overflow-x: auto;
   list-style: none;
@@ -881,6 +882,15 @@ body{
 
 /* max-width: 1150px */
 @media only screen and (max-width: 1150px) {
+  .slide-list{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .slide-item:not(:last-child) {
+    margin-right: 0;
+  }
+  
   .blog-posts {
     justify-content: space-around;
   }
@@ -976,10 +986,6 @@ body{
   
   .product-box{
     justify-content: space-around;
-  }
-  
-  .inside-products-box:last-child {
-    margin: 0;
   }
   
 }
@@ -1303,6 +1309,19 @@ body{
   .recepies-section{
     margin-left: 0px;
     margin-bottom: 20px;
+  }
+
+  .slide-list{
+    padding: 0 10px;
+  }
+
+  .slide-item{
+    max-width: 320px;
+  }
+
+  .slide-item::after {
+    top: 184px;
+    left: 140px
   }
 }
 
