@@ -387,11 +387,6 @@ body{
   flex-wrap: wrap;
 }
 
-.inside-products-box{
-  margin: 0;
-  margin-bottom: 20px;
-}
-
 .one-fifty-dollar__product,
 .thirty-dollar__product,
 .one-ten-dollar__product{
@@ -404,6 +399,11 @@ body{
 .thirty-dollar__product{
   margin-left: 32px;
   margin-right: 32px;
+}
+
+.inside-products-box{
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .products-image-box{
@@ -487,6 +487,7 @@ body{
 }
 
 
+
 /* FARMERS PRODUCTS SECTION */
 .farmers-products-section,
 .customers-section{
@@ -499,6 +500,7 @@ body{
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 32px;
 }
 
 .site-section__text{
@@ -530,6 +532,76 @@ body{
   background-position: center 5px;
   width: 16px;
   height: 16px;
+}
+
+
+.slide-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  list-style: none;
+}
+
+.slide-item{
+  flex-shrink: 0;
+  position: relative;
+  max-width: 369px;
+  padding: 24px 32px 40px 32px;
+  margin-bottom: 30px;
+  border: 1px solid #F1F1F1;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
+.slide-item::after{
+  content: "";
+  position: absolute;
+  top: 174px;
+  left: 160px;
+  background-image: url("/images/author-img.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 48px;
+  height: 48px;
+}
+
+.slide-item:nth-child(1):after{
+  background-image: url("/images/author1.svg");
+}
+
+.slide-item:nth-child(2):after{
+  background-image: url("/images/author2.svg");
+}
+
+.slide-item:nth-child(4):after{
+  background-image: url("/images/author1.svg");
+}
+
+.slide-item:not(:last-child){
+  margin-right: 32px;
+}
+
+.slide-item__text{
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.slide-item__span{
+  display: block;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #A9A9A9;
 }
 
 
@@ -629,7 +701,7 @@ body{
   position: absolute;
   top: -10px;
   left: 0;
-  background-image: url("/images/autor-img.svg");
+  background-image: url("/images/author-img.svg");
   background-repeat: no-repeat;
   width: 32px;
   height: 32px;
@@ -1188,12 +1260,12 @@ body{
     background-size: 460px 450px;
     border-radius: 5%;
   }
-
-
+  
+  
   .footer-top__section-title{
     text-align: center;
   }
-
+  
   .footer-top__section-link {
     display: block;
     text-align: center;
