@@ -1053,7 +1053,76 @@ body{
 
 
 
+/* FRUITS LIST SECTION */
 
+.fruits-list-section{
+  padding: 64px 0;
+}
+
+
+.categories-sub-title{
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--text-color);
+}
+
+.name-categories__list{
+  margin: 0;
+  margin-bottom: 48px;
+  padding: 0;
+  list-style: none;
+}
+
+.name-categories__item:not(:last-child){
+  margin-bottom: 12px;
+}
+
+.name-categories__item{
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--text-color);
+}
+
+.name-categories__span{
+  display: inline-block;
+  margin-left: 130px;
+  padding: 0 8px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--green-color);
+  background-color: #F4F8EC;
+  border-radius: 12px;
+}
+
+
+.brand-categories,
+.rating-categories{
+  margin-bottom: 48px;
+}
+
+.brand-categories-form:not(:last-child){
+  margin-bottom: 12px;
+}
+
+.brand-categories{
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-categories-form label{
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--text-color);
+}
+
+.rating-categories-form:not(:last-child){
+  margin-bottom: 16px;
+}
 
 
 /* RESPONSIVE */
