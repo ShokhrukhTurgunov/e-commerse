@@ -1124,6 +1124,123 @@ body{
   margin-bottom: 16px;
 }
 
+.choosing-price{
+  max-width: 251px;
+  height: 6px;
+  margin-bottom: 16px;
+  background-color: #ebebeb;
+  border-radius: 12px;
+}
+
+.choosed-price{
+  position: relative;
+  max-width: 80px;
+  height: 6px;
+  margin-left: 50px;
+  background-color: #6a983c;
+  border-radius: 12px;
+}
+
+.choosed-price::before{
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -12px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background: #FFFFFF;
+  border: 1px solid #D1D1D1;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.choosed-price::after{
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background: #FFFFFF;
+  border: 1px solid #D1D1D1;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.min-max-form{
+  display: flex;
+  align-items: center;
+}
+
+.min-price-form{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 31px;
+}
+
+.min-price-form:first-child{
+  margin-right: 33px;
+}
+
+.min-price-form label{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--text-color);
+}
+
+.min-price-form input{
+  max-width: 109px;
+  padding: 12px 20px;
+  background: #F9F9F9;
+  border: 1px solid #D1D1D1;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A9A9A9;
+}
+
+
+.apply-reset-form{
+  display: flex;
+  align-items: center;
+}
+
+.apply-form:first-child{
+  margin-right: 34px;
+}
+
+.apply-form input{
+  padding: 13px 16px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  color: #A9A9A9;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.apply-form input:hover{
+  background-color: #6a983c;
+  color: #fff;
+  border: 2px solid #46760a;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
+.apply-form:first-child input{
+  background-color: #6a983c;
+  color: #fff;
+  border: 2px solid #46760a;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
+
 
 /* RESPONSIVE */
 /* max-width: 1240px */
