@@ -378,7 +378,6 @@ body{
 
 .products-box{
   display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-left: auto;
 }
@@ -858,6 +857,8 @@ body{
 
 
 /* CATEGORY LIST PAGE STYLE*/
+/* CATEGORY LIST PAGE STYLE*/
+
 
 .page-links{
   margin-top: 16px;
@@ -1512,6 +1513,34 @@ body{
   line-height: 16px;
   color: #A9A9A9;
 }
+
+
+/* CATEGORY GRID PAGE STYLE*/
+/* CATEGORY GRID PAGE STYLE*/
+.fruits-grid-section{
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 0;
+}
+
+.grid__box{
+  margin-bottom: 48px;
+}
+
+.grid-box__rate-image{
+  display: block;
+  margin-bottom: 16px;
+}
+
+.one-fifty-dollar__product-link{
+  margin-left: 40px;
+}
+
+
+
+
+
+
 
 
 
