@@ -1590,6 +1590,14 @@ body{
   .tasty-dinner-box{
     margin-bottom: 50px;
   }
+  
+  
+  /* CATEGORY GRID PAGE RESPONSIVE*/
+  .thirty-dollar__product{
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
 }
 
 
@@ -1672,6 +1680,26 @@ body{
   .name-categories__span {
     margin-left: 50px;
   }
+  
+  .one-fifty-dollar__product-link {
+    margin-left: 20px;
+  }
+  
+  .choosing-price{
+    max-width: 221px;
+  }
+  
+  .min-price-form:first-child {
+    margin-right: 18px;
+  }
+  
+  .min-price-form input {
+    max-width: 90px;
+  }
+  
+  .product-box{
+    flex-wrap: wrap;
+  }
 }
 
 
@@ -1711,6 +1739,22 @@ body{
   
   .list-main-product__details {
     margin-left: 28px;
+  }
+  
+  
+  .fruits-grid-section {
+    flex-direction: column;
+  }
+
+  .categories-column{
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .name-categories__item,
+  .brand-categories-form,
+  .rating-categories-form{
+    white-space: nowrap;
   }
 }
 
@@ -1832,7 +1876,19 @@ body{
   .inside-products-box:last-child{
     margin: 0;
   }
+
+  .categories-column{
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .thirty-dollar__product{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
+
+
 
 /* max-width: 700px */
 @media only screen and (max-width: 700px) {
