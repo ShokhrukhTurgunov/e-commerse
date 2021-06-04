@@ -1477,6 +1477,7 @@ body{
   border: 2px solid #46760A;
   box-sizing: border-box;
   border-radius: 12px;
+  white-space: nowrap;
 }
 
 .fruits-list-section__bottom-link::after{
@@ -1533,6 +1534,11 @@ body{
   
   .footer-top__section{
     justify-content: space-around;
+  }
+  
+  
+  .name-categories__span {
+    margin-left: 80px;
   }
 }
 
@@ -1615,6 +1621,68 @@ body{
   .products-box__link{
     margin-left: 40px;
   }
+  
+  
+  .fruits-list-section {
+    justify-content: space-between;
+  }
+  
+  .list-main-product {
+    width: 730px;
+  }
+  
+  .list-main-product__img-box {
+    padding: 130px 115px;
+  }
+  
+  .list-main-product__details {
+    margin-left: 48px;
+    padding-top: 32px;
+  }
+  
+  .name-categories__span {
+    margin-left: 50px;
+  }
+}
+
+
+/* max-width: 1010px */
+@media only screen and (max-width: 1010px) {
+  .choosing-price {
+    max-width: 221px;
+  }
+  
+  .min-price-form input {
+    max-width: 90px;
+    padding: 12px 12px;
+  }
+  
+  .fruits-list-section{
+    max-width: 970px;
+  }
+  
+  .products-column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  
+  .list-main-product {
+    width: 680px;
+  }
+  
+  .list-main-product__img-box {
+    padding: 105px 100px;
+  }
+  
+  .list-main-product__info {
+    margin-left: 22px;
+    padding-top: 34px;
+  }
+  
+  .list-main-product__details {
+    margin-left: 28px;
+  }
 }
 
 
@@ -1659,7 +1727,24 @@ body{
   .filtre-select {
     margin-left: 12px;
   }
+  
+  
+  .fruits-list-section{
+    flex-wrap: wrap;
+  }
+  
+  .categories-column{
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 50px;
+  }
+  
+  .fruits-list-section{
+    justify-content: center;
+  }
 }
+
+
 
 /* max-width: 768px */
 @media only screen and (max-width: 768px) {
@@ -1812,6 +1897,24 @@ body{
   .filtre-select-form{
     margin: 0 auto;
   }
+  
+  
+  .list-main-product {
+    width: 610px;
+  }
+  
+  .list-main-product__img-box {
+    padding: 80px 80px;
+  }
+  
+  .list-main-product__info {
+    margin-left: 16px;
+    padding-top: 24px;
+  }
+  
+  .list-main-product__details {
+    margin-left: 14px;
+  }
 }
 
 
@@ -1897,7 +2000,32 @@ body{
   .one-fifty-dollar__product-link{
     margin-left: 10px;
   }
+  
+  
+  .list-main-product {
+    max-width: 450px;
+    flex-direction: column;
+  }
+  
+  .list-main-product__img-box {
+    margin: 0 auto;
+    padding: 200px 200px;
+  }
+  
+  .list-main-product__link {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .fruits-list-section__bottom-link {
+    padding: 12px 12px;
+    padding-right: 28px;
+    font-size: 15px;
+    line-height: 22px;
+  }
 }
+
+
 
 /* max-width: 510px */
 @media only screen and (max-width: 510px) {
@@ -1995,6 +2123,26 @@ body{
   
   .filtre-form:last-child{
     margin-bottom: 16px;
+  }
+  
+  
+  .list-main-product {
+    max-width: 380px;
+  }
+  
+  .list-main-product__img-box {
+    padding: 180px 170px;
+  }
+  
+  .fruits-list-section__bottom-link {
+    padding: 6px 6px;
+    padding-right: 20px;
+    font-size: 12px;
+  }
+  
+  .fruits-list-section__bottom-link::after {
+    top: 8px;
+    left: 135px;
   }
 }
 
@@ -2108,6 +2256,61 @@ body{
     font-size: 8px;
     line-height: 12px;
   }
+  
+  .list-main-product {
+    max-width: 300px;
+  }
+  
+  .list-main-product__img-box {
+    margin-top: 20px;
+    padding: 120px 120px;
+  }
+  
+  .list-main-product__title,
+  .list-main-product__text {
+    text-align: center;
+  }
+  
+  .list-main-product__rate-img{
+    margin-left: 85px;
+  }
+  
+  .list-main-product__link {
+    margin-right: 15px;
+    padding: 6px 6px;
+    padding-right: 20px;
+    font-size: 10px;
+    line-height: 18px;
+  }
+  
+  .list-main-product__link::after {
+    top: 6px;
+    left: 82px;
+  }
+  
+  .list-main-product__btn {
+    padding: 7px 12px;
+    padding-left: 34px;
+    font-size: 10px;
+    line-height: 16px;
+  }
+  
+  .list-main-product__btn::before {
+    top: 6px;
+  }
+  
+  .fruits-list-section__bottom-link {
+    display: block;
+    margin: 0 auto;
+    padding: 2px 4px;
+    padding-right: 16px;
+    font-size: 10px;
+  }
+  
+  .fruits-list-section__bottom-link::after {
+    top: 4px;
+    left: 110px;
+  }
 }
 
 
@@ -2135,7 +2338,11 @@ body{
     margin-bottom: 8px;
   }
   
-  /* .fruits-section__view-item:last-child {
+  .fruits-list-section__bottom {
+    flex-wrap: wrap;
+  }
+  
+  .fruits-list-section__bottom-products {
     margin: 0 auto;
-  } */
+  }
 }
