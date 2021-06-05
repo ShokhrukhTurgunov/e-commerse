@@ -389,7 +389,8 @@ body{
 
 .one-fifty-dollar__product,
 .thirty-dollar__product,
-.one-ten-dollar__product{
+.one-ten-dollar__product,
+.related-products__product{
   padding: 16px;
   padding-bottom: 26px;
   border: 1px solid #D1D1D1;
@@ -1693,6 +1694,7 @@ body{
   font-size: 26px;
   line-height: 39px;
   color: var(--green-color);
+  white-space: nowrap;
 }
 
 .carrots-buy-box__text::after{
@@ -1716,6 +1718,7 @@ body{
   border: 1px solid #D1D1D1;
   box-sizing: border-box;
   border-radius: 12px;
+  white-space: nowrap;
 }
 
 .carrots-buy-box-form input{
@@ -1754,6 +1757,7 @@ body{
   box-sizing: border-box;
   border-radius: 12px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .carrots-buy-box__btn::before{
@@ -1788,6 +1792,7 @@ body{
   line-height: 22px;
   text-decoration: none;
   color: var(--text-color);
+  white-space: nowrap;
 }
 
 .add-wish-list__link:hover{
@@ -1906,6 +1911,11 @@ tr:nth-child(even) {
   background-color: #fdfdfd;;
 }
 
+.related-products__box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 
 
@@ -1939,6 +1949,11 @@ tr:nth-child(even) {
 
 /* max-width: 1150px */
 @media only screen and (max-width: 1150px) {
+  .site-menu__list{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
   .slide-list{
     flex-wrap: wrap;
     justify-content: space-around;
@@ -1963,6 +1978,16 @@ tr:nth-child(even) {
     margin-right: 15px;
   }
   
+  
+  /* DESCRIPTION PAGE RESPONSIVE */
+  .carrots-image-box {
+    padding: 220px 245px;
+  }
+  
+  .carrots-description__text,
+  .origins-description__text {
+    max-width: 520px;
+  }
 }
 
 
@@ -2065,6 +2090,17 @@ tr:nth-child(even) {
   .product-box{
     flex-wrap: wrap;
   }
+  
+  
+  /* DESCRIPTION PAGE RESPONSIVE */
+  .related-products__box{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .related-products__product{
+    margin-bottom: 25px;
+  }
 }
 
 
@@ -2120,6 +2156,31 @@ tr:nth-child(even) {
   .brand-categories-form,
   .rating-categories-form{
     white-space: nowrap;
+  }
+  
+  
+  /* DESCRIPTION PAGE RESPONSIVE */
+  .carrots-image-box {
+    padding: 200px 205px;
+  }
+  
+  .carrots-description__text,
+  .origins-description__text {
+    max-width: 490px;
+  }
+  
+  .carrots-description{
+    margin-left: 15px;
+  }
+  
+  .product-descriptions__link {
+    padding-bottom: 14px;
+    padding-right: 43px;
+    font-size: 14px;
+  }
+  
+  .product-descriptions__link-span {
+    margin-left: 5px;
   }
 }
 
@@ -2180,6 +2241,26 @@ tr:nth-child(even) {
   .fruits-list-section{
     justify-content: center;
   }
+  
+  
+  /* DESCRIPTION PAGE RESPONSIVE */
+  .carrots-image-box {
+    padding: 170px 170px;
+  }
+  
+  .carrots-description__title {
+    font-size: 28px;
+    line-height: 140%;
+  }
+  
+  .carrots-description__text,
+  .origins-description__text {
+    max-width: 430px;
+  }
+  
+  .carrots-description{
+    margin-left: 5px;
+  }
 }
 
 
@@ -2204,10 +2285,6 @@ tr:nth-child(even) {
     font-size: 11px;
     line-height: 15px;
     background-position: calc(50% + 80px) center;
-  }
-  
-  .site-menu__list{
-    flex-wrap: wrap;
   }
   
   .site-menu__item:hover .dropdown-menu{
@@ -2250,6 +2327,48 @@ tr:nth-child(even) {
   .thirty-dollar__product{
     margin-left: 10px;
     margin-right: 10px;
+  }
+  
+  
+  /* DESCRIPTION PAGE RESPONSIVE */
+  .carrots-image-box {
+    padding: 140px 140px;
+  }
+  
+  .carrots-description__title {
+    font-size: 24px;
+    line-height: 100%;
+  }
+  
+  .carrots-description__span {
+    margin-bottom: 20px;
+  }
+  
+  .carrots-description__text,
+  .origins-description__text {
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .carrots-info-list__text-right,
+  .carrots-info-list__link,
+  .carrots-info-list__link2 {
+    margin-left: 15px;
+  }
+  
+  .carrots-buy-box__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  .product-descriptions__link {
+    padding-bottom: 14px;
+    padding-right: 33px;
+    font-size: 14px;
+  }
+  
+  .product-descriptions__link-span {
+    margin-left: 0;
   }
 }
 
@@ -2364,6 +2483,28 @@ tr:nth-child(even) {
   
   .list-main-product__details {
     margin-left: 14px;
+  }
+  
+  
+  /* DESCRIPTION PAGE RESPONSIVE */
+  .carrots-section{
+    flex-direction: column;
+  }
+  
+  .carrots-images{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  
+  
+  .product-descriptions__link {
+    padding-right: 53px;
+    font-size: 14px;
+  }
+  
+  .product-descriptions__link-span{
+    margin-left: 15px;
   }
 }
 
@@ -2594,6 +2735,37 @@ tr:nth-child(even) {
     top: 8px;
     left: 135px;
   }
+  
+  
+  /* DESCRIPTION PAGE RESPONSIVE */
+  .product-descriptions__link {
+    padding-right: 23px;
+    font-size: 14px;
+  }
+  
+  .product-descriptions__link-span{
+    margin-left: 5px;
+  }
+  
+  .carrots-buy-box-form {
+    margin-right: 8px;
+    padding: 14px 8px;
+  }
+  
+  .carrots-buy-box-form input {
+    padding-right: 8px;
+  }
+  
+  .carrots-buy-box__btn {
+    position: relative;
+    padding: 12px 16px;
+    padding-left: 22px;
+    font-size: 12px;
+  }
+  
+  .carrots-buy-box__btn::before {
+    left: 4px;
+  }
 }
 
 
@@ -2760,6 +2932,67 @@ tr:nth-child(even) {
   .fruits-list-section__bottom-link::after {
     top: 4px;
     left: 110px;
+  }
+  
+  
+  /* DESCRIPTION PAGE RESPONSIVE */
+  .carrots-description__title {
+    font-size: 18px;
+  }
+  
+  .carrots-description__text{
+    font-size: 14px;
+  }
+  
+  .carrots-info-list__text {
+    font-size: 10px;
+  }
+  
+  .carrots-info-list__text-right, 
+  .carrots-info-list__link, 
+  .carrots-info-list__link2 {
+    margin-left: 14px;
+    font-size: 10px;
+  }
+  
+  .carrots-buy-box__text {
+    font-size: 14px;
+  }
+  
+  .carrots-buy-box-form {
+    margin-right: 8px;
+    padding: 8px 8px;
+  }
+  
+  .carrots-buy-box__btn {
+    position: relative;
+    padding: 8px 12px;
+    padding-left: 18px;
+    font-size: 10px;
+  }
+  
+  .carrots-buy-box__btn::before {
+    top: 12px;
+    left: 0;
+  }
+  
+  .carrots-buy-box__text::after {
+    font-size: 12px;
+  }
+  
+  .add-wish-list__link {
+    margin-left: 34px;
+    font-size: 12px;
+    line-height: 22px;
+  }
+  
+  .product-descriptions__link {
+    padding-right: 12px;
+    font-size: 12px;
+  }
+  
+  .product-descriptions__link-span{
+    margin-left: 0;
   }
 }
 
