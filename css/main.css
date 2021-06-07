@@ -1919,6 +1919,77 @@ tr:nth-child(even) {
 
 
 
+/* CHECKOUT PAGE STYLE */
+/* CHECKOUT PAGE STYLE */
+
+.chechkout-box{
+  max-width: 670px;
+  padding: 24px 0;
+}
+
+.billing-info__title{
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: var(--text-color);
+}
+
+.billing-info__text{
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A9A9A9;
+}
+
+.billing-info__span{
+  display: inline-block;
+  margin-left: 430px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A9A9A9;
+}
+
+.billing-info-form{
+  display: flex;
+  justify-content: space-between;
+}
+
+.billing-info-form div{
+  display: flex;
+  flex-direction: column;
+}
+
+.billing-info-form label{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--text-color);
+}
+
+.billing-info-form input,
+.billing-info-form select{
+  width: 319px;
+  margin-bottom: 32px;
+  padding: 12px 20px;
+  background: #F9F9F9;
+  border: 1px solid #D1D1D1;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A9A9A9;
+}
+
+
+
+
 /* RESPONSIVE */
 /* max-width: 1240px */
 @media only screen and (max-width: 1240px) {
@@ -2097,7 +2168,7 @@ tr:nth-child(even) {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-
+  
   .related-products__product{
     margin-bottom: 25px;
   }
