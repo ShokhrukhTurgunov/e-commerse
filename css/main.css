@@ -2471,6 +2471,7 @@ ul{
 .category-type{
   display: flex;
   margin-bottom: 40px;
+  padding: 16px 0;
 }
 .category-type__disabled{
   font-weight: normal;
