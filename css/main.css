@@ -1921,7 +1921,7 @@ tr:nth-child(even) {
 
 /* CHECKOUT PAGE STYLE */
 /* CHECKOUT PAGE STYLE */
-.chechkout-box{
+.checkout-box{
   display: flex;
   justify-content: space-between;
 }
