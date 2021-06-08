@@ -167,7 +167,7 @@
       
       <!-- CHECKOUT PAGE BOX -->
       
-      <div class="chechkout-box">
+      <div class="checkout-box">
         
         <section class="billing-info-section">
           
@@ -181,7 +181,7 @@
             
             <form class="billing-info-form">
               
-              <div>
+              <div class="address-box">
                 
                 <label for="textChoice1">First name</label>
                 <input type="text" id="textChoice1" placeholder="First name">
@@ -199,6 +199,11 @@
                   <option value="mercedes">USA</option>
                   <option value="audi">England</option>
                 </select>
+                
+                <div class="address-box2">
+                  <input class="address-input" type="checkbox" id="textChoice1">
+                  <label class="address-label" for="textChoice1">Ship to a different address?</label>
+                </div>
                 
               </div>
               
@@ -224,21 +229,188 @@
           
           <div class="billing-method-box">
             
+            <h3 class="billing-info__title">Billing method</h3>
+            
+            <p class="billing-info__text">Please enter your payment method</p>
+            
+            <span class="billing-info__span">Step 2 of 5</span>
+            
+            
+            <form class="billing-method-form">
+              
+              <div class="billing-mthod-form__box">
+                
+                <div>
+                  <input type="radio" id="textChoice1">
+                  <label for="textChoice1">FedEx</label>
+                </div>
+                
+                <div>
+                  <span>+32 USD</span>
+                  <p>Additional price</p>
+                </div>
+                
+                <div>
+                  <img src="/images/FedEx-image.svg" alt="" width="54" height="16">
+                </div>
+                
+              </div>
+              
+              <div class="billing-mthod-form__box">
+                
+                <div>
+                  <input type="radio" id="textChoice1">
+                  <label for="textChoice1">DHL</label>
+                </div>
+                
+                <div>
+                  <span>+15 USD</span>
+                  <p>Additional price</p>
+                </div>
+                
+                <div>
+                  <img src="/images/dhl-image.svg" alt="" width="55" height="14">
+                </div>
+                
+              </div>
+              
+            </form>
+            
           </div>
           
           
           <div class="payment-method-box">
+            
+            <h3 class="billing-info__title">Payment method</h3>
+            
+            <p class="billing-info__text">Please enter your payment method</p>
+            
+            <span class="billing-info__span">Step 3 of 5</span>
+            
+            <form class="billing-method-form">
+              
+              <div class="credit-card__box">
+                
+                <div class="credit-card__top">
+                  
+                  <div>
+                    <input type="radio" checked id="textChoice1">
+                    <label for="textChoice1">Credit card</label>
+                  </div>
+                  
+                  <div>
+                    <img src="/images/visa-image.svg" alt="" width="94" height="20">
+                  </div>
+                  
+                </div>
+                
+                <label for="textChoice1">Card number</label>
+                <input type="text" id="textChoice1" placeholder="Card number">
+                
+                <div class="credit-card__bottom">
+                  
+                  <div class="card-holder">
+                    <label for="textChoice1">Card holder</label>
+                    <input type="text" id="textChoice1" placeholder="Card holder">
+                  </div>
+                  
+                  <div class="expiration-date">
+                    <label for="textChoice1">Expiration date</label>
+                    <input type="text" id="textChoice1" placeholder="DD/MM/YY">
+                  </div>
+                  
+                  <div class="cvc">
+                    <label for="textChoice1">CVC</label>
+                    <input type="text" id="textChoice1" placeholder="CVC">
+                  </div>
+                  
+                </div>
+                
+              </div>
+
+
+              <div class="billing-mthod-form__box">
+                
+                <div>
+                  <input type="radio" id="textChoice1">
+                  <label for="textChoice1">PayPal</label>
+                </div>
+                
+                <div>
+                  <img src="/images/paypal-image.svg" alt="" width="80" height="19">
+                </div>
+                
+              </div>
+
+              <div class="billing-mthod-form__box">
+                
+                <div>
+                  <input type="radio" id="textChoice1">
+                  <label for="textChoice1">Bitcoin</label>
+                </div>
+                
+                <div>
+                  <img src="/images/bitcoin-image.svg" alt="" width="75" height="16">
+                </div>
+                
+              </div>
+              
+            </form>
             
           </div>
           
           
           <div class="additional-informations-box">
             
+            <h3 class="billing-info__title">Additional informations</h3>
+            
+            <p class="billing-info__text">Need something else? We will make it for you!</p>
+            
+            <span class="billing-info__span additional-informations__span">Step 4 of 5</span>
+
+            <form class="additional-informations__form">
+              <label for="textChoice1">Order notes</label>
+              <input type="text" id="textChoice1" placeholder="Need a specific delivery day? Sending a gitf? Let’s say ...">
+            </form>
+
           </div>
           
           
           <div class="confirmation-box">
             
+            <h3 class="billing-info__title">Confirmation</h3>
+            
+            <p class="billing-info__text">We are getting to the end. Just few clicks and your order si ready!</p>
+            
+            <span class="billing-info__span confirmation__span">Step 5 of 5</span>
+
+            <form class="confirmation-box__form">
+              
+              <div class="confirmation-input__box">
+                <input type="checkbox" id="textChoice1">
+                <label for="textChoice1">I agree with sending an Marketing and newsletter emails. No spam, promissed!</label>
+              </div>
+
+              <div class="confirmation-input__box2">
+                <input type="checkbox" id="textChoice1">
+                <label for="textChoice1">I agree with our <a class="confirmation-input__box-link" href="#">terms and conditions</a> and <a class="confirmation-input__box-link" href="#">privacy policy.</a></label>
+              </div>
+
+            </form>
+            
+            <button class="confirmation-box__btn">Complete order</button>
+
+          </div>
+
+
+          <div class="safety-box">
+
+            <p class="safety-box__text">All your data are safe</p>
+
+            <span class="safety-box__span">
+              We are using the most advanced security to provide you the best experience ever.
+            </span>
+
           </div>
           
         </section>
@@ -246,6 +418,142 @@
         
         <section class="order-summary-section">
           
+          <div class="order-summary-section__box">
+            <h3 class="order-summary-section__title">Order Summary</h3>
+
+          <p class="order-summary-section__text">Price can change depending on shipping method and taxes of your state.</p>
+
+
+          <div class="order-summary-section__product">
+
+            <div class="order-product__left">
+              <div class="order-product__img"></div>
+
+              <p class="order-product__text">Wishlist</p>
+              <p class="order-product__text">Compare</p>
+              <p class="order-product__text">Remove</p>
+            </div>
+
+            <div class="order-product__middle">
+              <h5 class="order-product-middle__title">Product title</h5>
+
+              <div>
+                <ul>
+                  <li>Farm:</li>
+                  <li>Freshness:</li>
+                </ul>
+                <ul>
+                  <li>Tharamis Farm</li>
+                  <li>1 day old</li>
+                </ul>
+              </div>
+
+              <img class="order-product__middle-img" src="/images/4star.svg" alt="stars-image"  width="88" height="16">
+
+              <p class="order-product__middle-price sale-product-price">36.99 USD</p>
+            </div>
+
+            <div class="order-product__right">
+              <form class="order-product__right-form">
+                <input type="text" checked id="priceinput" placeholder="1 pcs" required>
+                <label class="visually-hidden" for="priceinput">Price input label</label>
+                
+                <select class="order-product__right-select" name="carrots">
+                  <option value="Select">Pcs</option>
+                  <option value="apple">Kg</option>
+                  <option value="banana">L</option>
+                </select>
+              </form>
+            </div>
+
+          </div>
+
+
+          <div class="order-summary-section__product">
+
+            <div class="order-product__left">
+              <div class="order-product__img"></div>
+
+              <p class="order-product__text">Wishlist</p>
+              <p class="order-product__text">Compare</p>
+              <p class="order-product__text">Remove</p>
+            </div>
+
+            <div class="order-product__middle">
+              <h5 class="order-product-middle__title">Product title</h5>
+
+              <div>
+                <ul>
+                  <li>Farm:</li>
+                  <li>Freshness:</li>
+                </ul>
+                <ul>
+                  <li>Tharamis Farm</li>
+                  <li>1 day old</li>
+                </ul>
+              </div>
+
+              <img class="order-product__middle-img" src="/images/4star.svg" alt="stars-image"  width="88" height="16">
+
+              <p class="order-product__middle-price sale-product-price">36.99 USD</p>
+            </div>
+
+            <div class="order-product__right">
+              <form class="order-product__right-form">
+                <input type="text" checked id="priceinput" placeholder="1 pcs" required>
+                <label class="visually-hidden" for="priceinput">Price input label</label>
+                
+                <select class="order-product__right-select" name="carrots">
+                  <option value="Select">Pcs</option>
+                  <option value="apple">Kg</option>
+                  <option value="banana">L</option>
+                </select>
+              </form>
+            </div>
+
+          </div>
+
+
+          <div class="order-summary-section__price">
+
+            <ul>
+              <li>Subtotal</li>
+              <li>Tax</li>
+              <li>Shipping</li>
+            </ul>
+
+            <ul>
+              <li>73.98 USD</li>
+              <li>17% 16.53 USD</li>
+              <li>0 USD</li>
+            </ul>
+
+          </div>
+
+          <div class="order-summary-section__apply">
+
+            <form class="order-summary-section__form">
+              <input type="text" id="textChoice1" placeholder="Apply promo code">
+              <label class="visually-hidden" for="textChoice1">Filtre</label>
+            </form>
+
+            <button class="order-summary-section__apply-btn">Apply now</button>
+
+          </div>
+
+
+          <div class="order-summary-section__total-order">
+
+            <div>
+              <p class="order-section__total-order_text">Total Order</p>
+              <span class="order-section__total-order_span">Guaranteed delivery day:  June 12, 2020</span>
+            </div>
+
+            <p class="order-summary-section__total-price">89.84 USD</p>
+          </div>
+
+          </div>
+
         </section>
         
       </div>
