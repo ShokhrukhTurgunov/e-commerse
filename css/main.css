@@ -3054,6 +3054,10 @@ label{
 }
 
 .user-activity__submit:hover{
+  background: rgba(106, 152, 60, 0.788);
+}
+
+.user-activity__submit:active{
   color: #6A983C;
   background: #FFFFFF;
 }
