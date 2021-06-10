@@ -90,6 +90,10 @@ body{
   color: var(--green-color);
 }
 
+.site-nav__link:hover{
+  text-decoration: underline;
+}
+
 .black-color-link{
   color: var(--text-color);
 }
