@@ -2692,6 +2692,7 @@ ul{
   box-sizing: border-box;
   border-radius: 12px;
   transition: .3s ease;
+  white-space: nowrap;
 }
 .next-page:hover{
   background: #fff;
@@ -3274,6 +3275,15 @@ label{
   .blog-cards__image{
     max-width: 545px;
   }
+  
+  .sidebar-forum__caption {
+    max-width: 250px;
+  }
+  
+  .sidebar-forum__sub {
+    padding: 10px 8px;
+    max-width: 250px;
+  }
 }
 
 
@@ -3323,6 +3333,14 @@ label{
   /* BLOG PAGE RESPONSIVE */
   .blog-cards__image{
     max-width: 500px;
+  }
+  
+  .small-blog {
+    justify-content: space-around;
+  }
+  
+  .small-card:not(:nth-child(3n)) {
+    margin-right: 0;
   }
   
   
@@ -3467,6 +3485,12 @@ label{
   }
   
   
+  /* BLOG PAGE RESPONSIVE */
+  .blog-cards__image{
+    max-width: 440px;
+  }
+  
+  
   /* CHECKOUT PAGE RESPONSIVE */
   .order-summary-section__product {
     justify-content: space-around;
@@ -3556,6 +3580,12 @@ label{
   
   .product-descriptions__link-span {
     margin-left: 5px;
+  }
+  
+  
+  /* BLOG PAGE RESPONSIVE */
+  .blog-cards__image{
+    max-width: 400px;
   }
   
   
@@ -3671,6 +3701,42 @@ label{
   
   .carrots-description{
     margin-left: 5px;
+  }
+  
+  
+  /* BLOG PAGE RESPONSIVE */
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+  
+  .blog-sidebar {
+    margin-left: 0;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .sidebar-body{
+    margin-right: 100px;
+  }
+  
+  .sidebar-forum__sub {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  .small-blog {
+    justify-content: space-around;
+  }
+  
+  .blog-cards__image{
+    max-width: 370px;
+  }
+  
+  .blog-cards:not(:last-child) {
+    margin-right: 15px;
   }
   
   
@@ -3820,6 +3886,38 @@ label{
   
   .product-descriptions__link-span {
     margin-left: 0;
+  }
+  
+  
+  /* BLOG PAGE RESPONSIVE */
+  .blog-cards__image{
+    width: 330px;
+    height: auto;
+  }
+  
+  .blog-cards__info {
+    display: none;
+  }
+  
+  .blog-cards__tag {
+    margin-bottom: 60px;
+  }
+  
+  .blog-cards__title {
+    font-size: 18px;
+  }
+  
+  .blog-cards:not(:last-child) {
+    margin-right: 5px;
+  }
+  
+  .sidebar-body{
+    margin-right: 0;
+  }
+  
+  .sidebar-forum__sub {
+    margin: 0 auto;
+    margin-top: 20px;
   }
   
   
@@ -4012,6 +4110,16 @@ label{
   .product-descriptions__link-span{
     margin-left: 15px;
   }
+  
+  
+  /* BLOG PAGE RESPONSIVE */
+  .blog-cards__image{
+    width: 280px;
+  }
+  
+  .blog-cards__tag {
+    margin-bottom: 40px;
+  }
 }
 
 
@@ -4119,6 +4227,20 @@ label{
     padding-right: 28px;
     font-size: 15px;
     line-height: 22px;
+  }
+  
+  
+  /* BLOG PAGE RESPONSIVE */
+  .blog-cards__text-container {
+    left: 10px;
+  }
+  
+  .blog-cards__image{
+    width: 240px;
+  }
+  
+  .blog-cards__tag {
+    margin-bottom: 25px;
   }
   
   
@@ -4292,6 +4414,41 @@ label{
   
   .carrots-buy-box__btn::before {
     left: 4px;
+  }
+  
+  
+  /* BLOG PAGE RESPONSIVE */ 
+  .category-heading {
+    margin-top: 0;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    font-size: 28px;
+  }
+
+  .blog-cards:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  
+  .blog-cards__image{
+    max-width: 290px;
+  }
+  
+  .blog-cards__tag {
+    margin-bottom: 70px;
+  }
+  
+  .blog-cards__title{
+    font-size: 15px;
+    line-height: 15px;
+  }
+  
+  .blog-sidebar {
+    justify-content: space-around;
+  }
+
+  .small-card__title{
+    margin: 0;
   }
   
   
@@ -4548,6 +4705,12 @@ label{
   }
   
   
+  /* BLOG CARDS PAGE */
+  .blog-cards:not(:last-child) {
+    margin-right: 0;
+  }
+  
+  
   /* CHECKOUT PAGE RESPONSIVE */
   .additional-informations__form input {
     max-width: 340px;
@@ -4563,7 +4726,7 @@ label{
     margin: 0 auto;
     margin-bottom: 32px;
   }
-
+  
   .confirmation-input__box label, 
   .confirmation-input__box2 label {
     font-size: 10px;
