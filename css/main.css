@@ -4431,16 +4431,16 @@ label{
   }
   
   .blog-cards__image{
-    max-width: 290px;
+    width: 330px;
   }
   
   .blog-cards__tag {
-    margin-bottom: 70px;
+    margin-bottom: 110px;
   }
   
   .blog-cards__title{
-    font-size: 15px;
-    line-height: 15px;
+    font-size: 22px;
+    line-height: 18px;
   }
   
   .blog-sidebar {
