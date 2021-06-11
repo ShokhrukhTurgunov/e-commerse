@@ -3200,6 +3200,7 @@ label{
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -3284,6 +3285,14 @@ label{
     padding: 10px 8px;
     max-width: 250px;
   }
+  
+  
+  /* SINGLE BLOG PAGE RESPONSIVE */
+  .single-blog__image{
+    display: block;
+    max-width: 1130px;
+    margin: 0 auto;
+  }
 }
 
 
@@ -3341,6 +3350,12 @@ label{
   
   .small-card:not(:nth-child(3n)) {
     margin-right: 0;
+  }
+  
+  
+  /* SINGLE BLOG PAGE RESPONSIVE */
+  .single-blog__image{
+    max-width: 1050px;
   }
   
   
@@ -3491,6 +3506,12 @@ label{
   }
   
   
+  /* SINGLE BLOG PAGE RESPONSIVE */
+  .single-blog__image{
+    max-width: 900px;
+  }
+  
+  
   /* CHECKOUT PAGE RESPONSIVE */
   .order-summary-section__product {
     justify-content: space-around;
@@ -3516,6 +3537,7 @@ label{
   
   .fruits-list-section{
     max-width: 970px;
+    height: auto;
   }
   
   .products-column {
@@ -3586,6 +3608,20 @@ label{
   /* BLOG PAGE RESPONSIVE */
   .blog-cards__image{
     max-width: 400px;
+  }
+  
+  
+  /* SINGLE BLOG PAGE RESPONSIVE */
+  .single-blog__image{
+    max-width: 800px;
+  }
+  
+  .sb-header__elemnts {
+    left: 12%;
+  }
+  
+  .single-blog__header {
+    max-width: 500px;
   }
   
   
@@ -3737,6 +3773,27 @@ label{
   
   .blog-cards:not(:last-child) {
     margin-right: 15px;
+  }
+  
+  
+  /* SINGLE BLOG PAGE RESPONSIVE */
+  .single-blog__image{
+    max-width: 750px;
+  }
+  
+  .single-blog__header {
+    max-width: 500px;
+    margin: 0;
+  }
+  
+  .social-items__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .social-items__items {
+    margin-bottom: 16px;
   }
   
   
@@ -3918,6 +3975,24 @@ label{
   .sidebar-forum__sub {
     margin: 0 auto;
     margin-top: 20px;
+  }
+  
+  
+  /* SINGLE BLOG PAGE RESPONSIVE */
+  .single-blog__image{
+    max-width: 700px;
+  }
+  
+  .single-blog__header {
+    max-width: 470px;
+  }
+  
+  .sb-header__elemnts {
+    left: 5%;
+  }
+  
+  .related-topics-section__list {
+    justify-content: space-around;
   }
   
   
@@ -4424,7 +4499,7 @@ label{
     white-space: nowrap;
     font-size: 28px;
   }
-
+  
   .blog-cards:not(:last-child) {
     margin-right: 0;
     margin-bottom: 20px;
@@ -4435,18 +4510,18 @@ label{
   }
   
   .blog-cards__tag {
-    margin-bottom: 110px;
+    margin-bottom: 100px;
   }
   
   .blog-cards__title{
     font-size: 22px;
-    line-height: 18px;
+    line-height: 22px;
   }
   
   .blog-sidebar {
     justify-content: space-around;
   }
-
+  
   .small-card__title{
     margin: 0;
   }
