@@ -4545,6 +4545,28 @@ label{
   .product-descriptions__link-span{
     margin-left: 0;
   }
+  
+  
+  /* CHECKOUT PAGE RESPONSIVE */
+  .additional-informations__form input {
+    max-width: 340px;
+    font-size: 10px;
+  }
+  
+  .billing-info__span {
+    margin-left: 300px;
+  }
+  
+  .confirmation-box, .confirmation-box__form {
+    max-width: 340px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+
+  .confirmation-input__box label, 
+  .confirmation-input__box2 label {
+    font-size: 10px;
+  }
 }
 
 
