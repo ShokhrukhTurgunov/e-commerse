@@ -2376,6 +2376,7 @@ tr:nth-child(even) {
   border: none;
   border-left: 1px solid #D1D1D1;
   color: var(--text-color);
+  background-color: transparent;
 }
 
 .order-summary-section__price{
