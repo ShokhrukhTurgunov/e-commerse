@@ -128,7 +128,6 @@ body{
   box-sizing: border-box;
   border-radius: 12px;
   white-space: nowrap;
-  background-color: transparent;
 }
 
 .header-section__select{
@@ -139,6 +138,7 @@ body{
   font-size: 15px;
   line-height: 22px;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .header-section__input{
