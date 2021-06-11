@@ -242,6 +242,7 @@ body{
   line-height: 22px;
   text-decoration: none;
   color: rgba(14, 13, 13, 0.815);
+  white-space: nowrap;
 }
 
 .site-menu__item:hover .dropdown-menu{
@@ -2105,6 +2106,7 @@ tr:nth-child(even) {
 
 .billing-method-form label{
   margin-left: 0;
+  white-space: nowrap;
 }
 
 .credit-card__top label{
@@ -2332,6 +2334,7 @@ tr:nth-child(even) {
   font-size: 12px;
   line-height: 16px;
   color: var(--text-color);
+  white-space: nowrap;
 }
 
 .order-product__middle-price{
@@ -2425,6 +2428,7 @@ tr:nth-child(even) {
   background-color: transparent;
   border: none;
   outline: none;
+  white-space: nowrap;
   cursor: pointer;
 }
 
@@ -2501,6 +2505,7 @@ ul{
 }
 .blog-cards__container{
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .blog-cards{
@@ -3258,6 +3263,15 @@ label{
   .name-categories__span {
     margin-left: 80px;
   }
+  
+  /* BLOG PAGE RESPONSIVE */
+  .blog-cards__container {
+    justify-content: space-around;
+  }
+  
+  .blog-cards__image{
+    max-width: 545px;
+  }
 }
 
 
@@ -3301,6 +3315,40 @@ label{
   .carrots-description__text,
   .origins-description__text {
     max-width: 520px;
+  }
+  
+  
+  /* BLOG PAGE RESPONSIVE */
+  .blog-cards__image{
+    max-width: 500px;
+  }
+  
+  
+  /* CHECKOUT PAGE RESPONSIVE */
+  .billing-info-box {
+    margin-right: 10px;
+  }
+  
+  .billing-info__span {
+    display: inline-block;
+    margin-left: 380px;
+  }
+  
+  .billing-method-form{
+    max-width: 620px;
+  }
+  
+  .billing-info__span {
+    margin-left: 330px;
+  }
+  
+  .card-holder input {
+    max-width: 300px;
+  }
+  
+  .order-summary-section__total-order {
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
@@ -3415,6 +3463,17 @@ label{
   .related-products__product{
     margin-bottom: 25px;
   }
+  
+  
+  /* CHECKOUT PAGE RESPONSIVE */
+  .order-summary-section__product {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .billing-info-form input, .billing-info-form select {
+    max-width: 300px;
+  }
 }
 
 
@@ -3496,6 +3555,42 @@ label{
   .product-descriptions__link-span {
     margin-left: 5px;
   }
+  
+  
+  /* CHECKOUT PAGE RESPONSIVE */
+  .billing-info-section {
+    max-width: 570px;
+  }
+  
+  .billing-info-box{
+    margin-right: 0;
+  }
+  
+  .billing-method-form {
+    max-width: 530px;
+  }
+  
+  .billing-info__span {
+    margin-left: 250px;
+  }
+  
+  .billing-info-form {
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+  
+  .billing-info-form input, .billing-info-form select {
+    max-width: 270px;
+  }
+  
+  .card-holder input {
+    max-width: 270px;
+  }
+  
+  .expiration-date input,
+  .cvc input {
+    max-width: 100px;
+  }  
 }
 
 
@@ -3574,6 +3669,46 @@ label{
   
   .carrots-description{
     margin-left: 5px;
+  }
+  
+  
+  /* CHECKOUT PAGE RESPONSIVE */
+  .billing-info-form input, .billing-info-form select {
+    max-width: 210px;
+  }
+  
+  .billing-method-form {
+    max-width: 450px;
+  }
+  
+  .billing-info__span {
+    margin-left: 170px;
+  }
+  
+  .card-holder input {
+    max-width: 220px;
+  }
+  
+  .expiration-date{
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  
+  .expiration-date input,
+  .cvc input {
+    max-width: 80px;
+  } 
+  
+  .card-holder input {
+    max-width: 220px;
+  }
+  
+  .order-summary-section__box {
+    padding: 18px 8px;
+  }
+  
+  .order-summary-section__apply {
+    max-width: 300px;
   }
 }
 
@@ -3683,6 +3818,59 @@ label{
   
   .product-descriptions__link-span {
     margin-left: 0;
+  }
+  
+  
+  /* CHECKOUT PAGE RESPONSIVE */
+  .checkout-box {
+    flex-direction: column-reverse;
+    margin-top: 32px;
+  }
+  
+  .order-summary-section__price {
+    justify-content: space-around;
+  }
+  
+  .order-summary-section__apply {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  
+  .billing-info-form input, 
+  .billing-info-form select {
+    max-width: 260px;
+  }
+  
+  .billing-info-section,
+  .order-summary-section{
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .checkout-box {
+    margin: 0 auto;
+  }
+  
+  .billing-method-form {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+  
+  .card-holder input {
+    max-width: 280px;
+  }
+  
+  .expiration-date input,
+  .cvc input {
+    max-width: 100px;
+  }
+  
+  .safety-box__text {
+    background-position: center top;
+  }
+  
+  .safety-box__span {
+    margin: 0 auto;
   }
 }
 
@@ -3928,6 +4116,27 @@ label{
     font-size: 15px;
     line-height: 22px;
   }
+  
+  
+  /* CHECKOUT PAGE RESPONSIVE */
+  .billing-info-form input, 
+  .billing-info-form select {
+    max-width: 230px;
+  }
+  
+  .billing-method-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .card-holder input {
+    max-width: 250px;
+  }
+  
+  .expiration-date input,
+  .cvc input {
+    max-width: 100px;
+  }
 }
 
 
@@ -4079,6 +4288,31 @@ label{
   
   .carrots-buy-box__btn::before {
     left: 4px;
+  }
+  
+  
+  /* CHECKOUT PAGE RESPONSIVE */
+  .billing-info-form input, 
+  .billing-info-form select {
+    max-width: 200px;
+  }
+  
+  .billing-method-form {
+    max-width: 400px;
+  }
+  
+  .billing-info__span {
+    margin-left: 350px;
+    white-space: nowrap;
+  }
+  
+  .card-holder input {
+    max-width: 160px;
+  }
+  
+  .expiration-date input,
+  .cvc input {
+    max-width: 70px;
   }
 }
 
