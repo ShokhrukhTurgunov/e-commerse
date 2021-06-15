@@ -878,6 +878,9 @@ body{
   text-decoration: none;
 }
 
+.footer-copyright-text a:hover{
+  text-decoration: underline;
+}
 
 
 /* CATEGORY LIST PAGE STYLE*/
