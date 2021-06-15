@@ -867,10 +867,15 @@ body{
   color: rgba(21, 21, 21, 0.315);
 }
 
-.footer-copyright-text{
+.footer-copyright-text,
+.footer-copyright-text a{
   font-size: 14px;
   line-height: 19px;
   color: var(--text-color);
+}
+
+.footer-copyright-text a {
+  text-decoration: none;
 }
 
 
