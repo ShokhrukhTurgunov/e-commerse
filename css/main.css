@@ -699,13 +699,20 @@ body{
   max-width: 380px;
   margin: 0;
   margin-bottom: 8px;
+}
+
+.tasty-dinner-box__text-link{
   font-weight: 600;
   font-size: 22px;
   line-height: 33px;
   color: #FFFFFF;
 }
 
-.tasty-dinner-box__span{
+.tasty-dinner-box__text-link:hover{
+  text-decoration: underline;
+}
+
+.tasty-dinner-box__author-link{
   position: relative;
   display: inline-block;
   margin-right: 16px;
@@ -715,7 +722,12 @@ body{
   color: #FFFFFF;
 }
 
-.tasty-dinner-box__span::before{
+.tasty-dinner-box__author-link:hover{
+  color: #768b27;
+  text-decoration: underline;
+}
+
+.tasty-dinner-box__author-link::before{
   content: "";
   position: absolute;
   top: -10px;
@@ -776,7 +788,8 @@ body{
   margin-bottom: 32px;
 }
 
-.inside-salats-box__text{
+.inside-salats-box__link{
+  display: block;
   max-width: 225px;
   margin: 0;
   margin-bottom: 16px;
@@ -784,6 +797,10 @@ body{
   font-size: 15px;
   line-height: 22px;
   color: var(--text-color);
+}
+
+.inside-salats-box__link:hover{
+  text-decoration: underline;
 }
 
 
@@ -2208,10 +2225,15 @@ tr:nth-child(even) {
   font-size: 14px;
   line-height: 19px;
   color: var(--text-color);
+  white-space: nowrap;
 }
 
 .confirmation-input__box-link{
   color: var(--text-color);
+}
+
+.confirmation-input__box-link:hover{
+  text-decoration: underline;
 }
 
 .confirmation-input__box:not(:last-child){
@@ -2220,6 +2242,7 @@ tr:nth-child(even) {
 
 .confirmation-input__box2{
   max-width: 463px;
+  display: flex;
 }
 
 .confirmation-box__btn{
